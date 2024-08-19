@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+
+
+    /* background-color: black; */
+    
+    display: flex;
+    
+    align-items: center;
+    font-size:large;
+    
+}
+
+#nav-bar {
+    background-color: rgb(32, 15, 68);
+    /* color: rgb(33, 24, 79); */
+      /* padding: 8px; */
+    
+      position: sticky;
+      top: 0px;
+      width: 100%;
+      z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+nav a {
+    
+    text-decoration: none;
+     /* background-color: rgba(43, 41, 41, 0.949); */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.icon-1{
+    display: flex;
+    position: relative;
+    /* left: 25px; */
+    top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    gap: 20px;
+
+}
+
+.con-1 {
+    width: 50%;
+    height: 50vh;
+    /* background-color: #86cff0; */
+    border-radius: 0px 0px 50px 50px;
+    padding: 0px 100px 100px 100px;
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns content at the top of the container */
+    z-index: 10000;
+}
+
+/* .con-1::second-child() {
+font-size: 10000px;
+} */
+
+#con-logo-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    font-size: 14px;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+
+}
+
+#con-logo-text :hover{
+    font-size: 36px;
+}
+
+#btn-1{
+    background-color: white; 
+    color: rgb(14, 1, 1);
+    padding: 10px 20px;
+    border:2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn{
+    background-color: #e74c3c; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow:  25px 25px 25px rgba(235, 244, 139, 0.7);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 25px 25px 25px rgba(118, 185, 239, 0.7);
+        transform: skewX(30deg);
+
+    }
+    100% {
+        transform: scale(1);
+        box-shadow:  25px 25px 25px rgba(225, 34, 13, 0.7);
+    }
+}
+
+#btn:hover {
+    background-color: #2980b9; /* Change button color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Define the active state */
+#btn:active {
+    background-color: #1c6693; /* Darken button color when clicked */
+    transform: scale(1.05); /* Slightly reduce the scale when clicked */
+}
+
+.con-2 {
+    width: 50%;
+    height: 50vh;
+    /* background-color: rgba(249, 241, 241, 0.8); */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#boxes-grid {
+    position: relative;
+    
+
+}
+
+.box {
+    /* background-color: lightblue; */
+    /* border: 1px solid #f1eaea; */
+    padding: 20px;
+    text-align: center;
+}
+
+
+#box-1 {
+    background-color: rgb(238, 238, 224);
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:15px;
+    width: 25px;
+    position: relative;
+    right: 20%;
+    
+   
+}
+
+#phn{
+    height:400px;
+    
+}
+
+#box-2 {
+    /* background-color: lightgreen; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+     left:-13%;
+     font-size: x-large;
+
+}
+
+.name{
+      /* background-color: #f1eaea; */
+    font-weight: bolder;
+    font-size: larger;
+    margin: 2px;
+    
+    justify-content: left;
+}
+
+.name1{
+    font-size:small ;
+}
+
+#n1{
+    position: relative;
+right: 5px;
+}
+#n2{
+position: relative;
+right: 24px;
+}
+
+#n3
+{
+    position: relative;
+    left:  1px;
+}
+
+#n3_3{
+    position: relative;
+    left:  -10px;
+}
+
+
+
+
+.con-bottom {
+    height: 78vh;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(24, 17, 33); /* Violet background for the entire container */
+    margin: 20px auto; /* Add margin for spacing */
+    max-width: 1200px; /* Limit the maximum width of the container */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    
+   
+}
+
+.con-bottom > div {
+    background-color: transparent; /* Ensure individual cells do not override the container's background */
+    padding: 10px;
+    color: white; /* Example text color for content within the grid cells */
+}
+
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 10%;
+    width: 100%; */
+    position: relative;
+    bottom: 90px;
+}
+
+
+
+.curve_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    color: rgb(23, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding-left: 20px;
+}
+
+footer{
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    height: 25vh;
+    font-size: large;
+    background-color: bisque;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    /* z-index: -1;
+    padding: 20px; */
+   
+
+    
+}
+
+#logos{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 15px;
+
+}
+
+/* footer {
+    background-color: #eae6f7;
+    color: rgb(9, 9, 9);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  } */
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .con-1, .con-2 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        min-width: 300px; /* Minimum width for con-1 to prevent contraction */
+    }
+
+    #box-1, #box-2 {
+        min-width: 100px; /* Minimum width for box-1 and box-2 to prevent contraction */
+    }
+
+    .con-bottom {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        height: auto;
+    }
+
+    .image {
+        bottom: 0;
+    }
+    footer {
+        height: 20vh; /* Reduce the height for tablet view */
+        padding: 15px;
+        font-size: medium;
+    }
+
+}
+
+/* Phone view */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .con-1, .con-2 {
+        padding: 10px;
+        min-width: 280px; /* Minimum width for con-1 to prevent contraction */
+    }
+
+    #box-1, #box-2 {
+        min-width: 80px; /* Minimum width for box-1 and box-2 to prevent contraction */
+    }
+
+    #con-logo-text {
+        font-size: 12px;
+    }
+
+    #con-logo-text:hover {
+        font-size: 18px;
+    }
+
+    #btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .con-bottom {
+        padding: 20px;
+    }
+
+    .content {
+        padding-left: 10px;
+    }
+
+    footer {
+        height: 15vh; /* Further reduce the height for phone view */
+        padding: 10px;
+        font-size: small;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    #logos {
+        gap: 10px; /* Reduce gap between logos for smaller screens */
+        margin-bottom: 10px; /* Add margin to separate logos from other footer content */
+    }
+}
+
+/* Laptop view */
+@media (min-width: 1024px) {
+    .con-1, .con-2 {
+        width: 45%;
+        height: 60vh;
+        min-width: 350px; /* Minimum width for con-1 to prevent contraction */
+    }
+
+    #box-1, #box-2 {
+        min-width: 120px; /* Minimum width for box-1 and box-2 to prevent contraction */
+    }
+
+    .con-bottom {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for larger screens */
+        height: 80vh;
+    }
+
+    footer {
+        height: 30vh; /* Increase the height for larger screens */
+        padding: 25px;
+    }
+
+    /* .image {
+        height: 80%;
+        width: 80%;
+        bottom: 0;
+    } */
+}
